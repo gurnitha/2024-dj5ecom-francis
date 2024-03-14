@@ -97,3 +97,7 @@ Github: https://github.com/gurnitha/2024-dj5ecom-francis
         modified:   README.md
         modified:   app/shop/apps.py
         modified:   config/settings.py
+
+
+
+## 4. URLS, VIEWS, TEMPLATES
