@@ -109,3 +109,9 @@ Github: https://github.com/gurnitha/2024-dj5ecom-francis
         new file:   app/shop/urls.py
         modified:   app/shop/views.py
         modified:   config/urls.py
+
+
+#### 2. Mengaktifkan django templates
+
+        modified:   README.md
+        modified:   config/settings.py
