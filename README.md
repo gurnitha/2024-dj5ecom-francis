@@ -321,3 +321,12 @@ Github: https://github.com/gurnitha/2024-dj5ecom-francis
         | shop_slider                   | <---- baru
         +-------------------------------+
         11 rows in set (0.00 sec)
+
+
+
+#### 2. Merancang tampilan Slider model pada admain panel dan insert beberapa sliders
+
+        modified:   app/shop/admin.py
+        new file:   media/sliders/2024/03/14/banner1.png
+        new file:   media/sliders/2024/03/14/banner3.png
+        new file:   media/sliders/2024/03/14/banner7.png
