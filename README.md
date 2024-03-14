@@ -157,3 +157,15 @@ Github: https://github.com/gurnitha/2024-dj5ecom-francis
 
 
 ## 5. DATABASE
+
+
+#### 1. Create MySQL database
+
+        mysql> show databases;
+        ...
+
+        mysql> CREATE DATABASE 2024_djecom_francis;
+        Query OK, 1 row affected (0.09 sec)
+
+        mysql> USE 2024_djecom_francis;
+        Database changed
