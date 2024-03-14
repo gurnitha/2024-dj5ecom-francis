@@ -330,3 +330,9 @@ Github: https://github.com/gurnitha/2024-dj5ecom-francis
         new file:   media/sliders/2024/03/14/banner1.png
         new file:   media/sliders/2024/03/14/banner3.png
         new file:   media/sliders/2024/03/14/banner7.png
+
+
+#### 3. Load slider dari db dan fetch slider pada home page
+
+        modified:   app/shop/views.py
+        modified:   templates/shop/index.html
