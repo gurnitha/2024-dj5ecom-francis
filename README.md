@@ -90,3 +90,10 @@ Github: https://github.com/gurnitha/2024-dj5ecom-francis
         new file:   app/shop/models.py
         new file:   app/shop/tests.py
         new file:   app/shop/views.py
+
+
+#### 2. Register app 'shop' pada config/settings.py
+
+        modified:   README.md
+        modified:   app/shop/apps.py
+        modified:   config/settings.py
