@@ -269,3 +269,7 @@ Github: https://github.com/gurnitha/2024-dj5ecom-francis
         The password is too similar to the email address.
         Bypass password validation and create user anyway? [y/N]: y
         Superuser created successfully.
+
+
+
+## 7. DJANGO MODEL
