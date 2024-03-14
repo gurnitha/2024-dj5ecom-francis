@@ -169,3 +169,27 @@ Github: https://github.com/gurnitha/2024-dj5ecom-francis
 
         mysql> USE 2024_djecom_francis;
         Database changed
+
+
+#### 2. Connect database with the project
+
+        DATABASES = {
+            'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'xx',
+            'USER': 'root',
+            'PASSWORD': 'xx',
+            'HOST':'localhost',
+            'PORT':'3306',
+            }
+        }
+
+        (francis) λ pip install mysqlclient
+        ...
+        Successfully installed mysqlclient-2.2.4
+
+        (francis) λ python manage.py check
+        System check identified no issues (0 silenced).
+
+        modified:   README.md
+        modified:   config/settings.py
