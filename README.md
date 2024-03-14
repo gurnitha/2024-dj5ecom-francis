@@ -9,3 +9,10 @@ Github: https://github.com/gurnitha/2024-dj5ecom-francis
 
 
 #### 2. Create venv, install django, upgrade pip
+
+
+#### 3. Create venv, install django, upgrade pip
+
+
+
+## 2. PROYEK DJANGO
