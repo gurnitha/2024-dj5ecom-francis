@@ -16,3 +16,14 @@ Github: https://github.com/gurnitha/2024-dj5ecom-francis
 
 
 ## 2. PROYEK DJANGO
+
+
+#### 1. Membuat proyek django dengan nama config
+
+        modified:   README.md
+        new file:   config/config/__init__.py
+        new file:   config/config/asgi.py
+        new file:   config/config/settings.py
+        new file:   config/config/urls.py
+        new file:   config/config/wsgi.py
+        new file:   config/manage.py
