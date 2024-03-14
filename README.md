@@ -138,3 +138,10 @@ Github: https://github.com/gurnitha/2024-dj5ecom-francis
         new file:   templates/partials/footer.html
         new file:   templates/partials/header.html
         modified:   templates/shop/index.html
+
+
+#### 6. Membuat path untuk static files
+
+        modified:   README.md
+        modified:   config/settings.py
+        modified:   config/urls.py
