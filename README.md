@@ -115,3 +115,10 @@ Github: https://github.com/gurnitha/2024-dj5ecom-francis
 
         modified:   README.md
         modified:   config/settings.py
+
+
+#### 3. Hallo World menggunakan ulrs, views dan templates
+
+        modified:   README.md
+        modified:   app/shop/views.py
+        new file:   templates/shop/index.html
