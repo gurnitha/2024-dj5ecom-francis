@@ -27,3 +27,28 @@ Github: https://github.com/gurnitha/2024-dj5ecom-francis
         new file:   config/config/urls.py
         new file:   config/config/wsgi.py
         new file:   config/manage.py
+
+
+#### 2. Merubh struktur proyek
+
+        modified:   README.md
+        renamed:    config/config/__init__.py -> config/__init__.py
+        renamed:    config/config/asgi.py -> config/asgi.py
+        renamed:    config/config/settings.py -> config/settings.py
+        renamed:    config/config/urls.py -> config/urls.py
+        renamed:    config/config/wsgi.py -> config/wsgi.py
+        renamed:    config/manage.py -> manage.py
+        deleted:    venv312503/Scripts/Activate.ps1
+        deleted:    venv312503/Scripts/activate
+        deleted:    venv312503/Scripts/activate.bat
+        deleted:    venv312503/Scripts/deactivate.bat
+        deleted:    venv312503/Scripts/django-admin.exe
+        deleted:    venv312503/Scripts/pip.exe
+        deleted:    venv312503/Scripts/pip3.12.exe
+        deleted:    venv312503/Scripts/pip3.exe
+        deleted:    venv312503/Scripts/python.exe
+        deleted:    venv312503/Scripts/pythonw.exe
+        deleted:    venv312503/Scripts/sqlformat.exe
+        deleted:    venv312503/pyvenv.cfg
+
+
