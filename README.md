@@ -201,3 +201,7 @@ Github: https://github.com/gurnitha/2024-dj5ecom-francis
         modified:   .gitignore
         modified:   README.md
         modified:   config/settings.py
+
+
+
+## 6. DJANGO ADMIN
