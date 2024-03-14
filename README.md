@@ -145,3 +145,11 @@ Github: https://github.com/gurnitha/2024-dj5ecom-francis
         modified:   README.md
         modified:   config/settings.py
         modified:   config/urls.py
+
+
+#### 7. Add dan load static files
+
+        new file:   static/assets/images/products/shorts/short_9/5.webp
+        ...
+        modified:   templates/partials/header.html
+        modified:   templates/shop/index.html
