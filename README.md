@@ -193,3 +193,11 @@ Github: https://github.com/gurnitha/2024-dj5ecom-francis
 
         modified:   README.md
         modified:   config/settings.py
+
+
+#### 3. Melindungi sensitif file
+
+        new file:   .env-example
+        modified:   .gitignore
+        modified:   README.md
+        modified:   config/settings.py

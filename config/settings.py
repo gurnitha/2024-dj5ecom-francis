@@ -9,6 +9,14 @@ https://docs.djangoproject.com/en/5.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
+import os
+import environ
+
+env = environ.Env(
+    # set casting, default value
+    # DEBUG=(bool, False)
+    DEBUG=(bool, True)
+)
 
 from pathlib import Path
 
@@ -16,11 +24,14 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
+# Take environment variables from .env file
+environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-guc9zqun3t4j#yygnrt!&8jk0kot4ffdrnk$@e+9r=*@m9v5az"
+SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -83,14 +94,23 @@ WSGI_APPLICATION = "config.wsgi.application"
 #     }
 # }
 
+# DATABASES = {
+#     'default': {
+#     'ENGINE': 'django.db.backends.mysql',
+#     'NAME': '2024_djecom_francis',
+#     'USER': 'root',
+#     'PASSWORD': '',
+#     'HOST':'localhost',
+#     'PORT':'3306',
+#     }
+# }
+
 DATABASES = {
     'default': {
-    'ENGINE': 'django.db.backends.mysql',
-    'NAME': '2024_djecom_francis',
-    'USER': 'root',
-    'PASSWORD': '',
-    'HOST':'localhost',
-    'PORT':'3306',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': env('DATABASE_NAME'),
+        'USER': env('DATABASE_USER'),
+        'PASSWORD': env('DATABASE_PASS'),
     }
 }
 
