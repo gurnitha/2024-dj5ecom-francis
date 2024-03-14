@@ -273,3 +273,51 @@ Github: https://github.com/gurnitha/2024-dj5ecom-francis
 
 
 ## 7. DJANGO MODEL
+
+
+#### 1. Membua Slider model dan jalankan migrasi
+
+        C:\Users\ING\Desktop\2024-DEVSPACE\2024-dj5ecom-francis\src(main -> origin)
+        (francis) λ python manage.py makemigrations
+        Migrations for 'shop':
+          app\shop\migrations\0001_initial.py
+            - Create model Slider
+
+        (francis) λ python manage.py migrate
+        Operations to perform:
+          Apply all migrations: admin, auth, contenttypes, sessions, shop
+        Running migrations:
+          Applying shop.0001_initial... OK
+
+        (francis) λ python manage.py sqlmigrate shop 0001
+        --
+        -- Create model Slider
+        --
+        CREATE TABLE `shop_slider` (
+                `id` bigint AUTO_INCREMENT NOT NULL PRIMARY KEY, 
+                `title` varchar(60) NOT NULL, 
+                `description` varchar(120) NOT NULL, 
+                `button_text` varchar(60) NOT NULL, 
+                `button_link` varchar(255) NOT NULL, 
+                `image` varchar(100) NOT NULL, 
+                `created_at` datetime(6) NOT NULL, 
+                `updated_at` datetime(6) NOT NULL
+        );
+
+        mysql> SHOW TABLES;
+        +-------------------------------+
+        | Tables_in_2024_djecom_francis |
+        +-------------------------------+
+        | auth_group                    |
+        | auth_group_permissions        |
+        | auth_permission               |
+        | auth_user                     |
+        | auth_user_groups              |
+        | auth_user_user_permissions    |
+        | django_admin_log              |
+        | django_content_type           |
+        | django_migrations             |
+        | django_session                |
+        | shop_slider                   | <---- baru
+        +-------------------------------+
+        11 rows in set (0.00 sec)
