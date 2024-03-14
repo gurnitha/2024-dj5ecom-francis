@@ -52,3 +52,41 @@ Github: https://github.com/gurnitha/2024-dj5ecom-francis
         deleted:    venv312503/pyvenv.cfg
 
 
+
+## 3. APP DJANGO
+
+
+#### 1. Membuat app 'shop' di dalam folder app
+
+        C:\Users\ING\Desktop\2024-DEVSPACE\2024-dj5ecom-francis\src(main -> origin)
+        (francis) λ REM: Membuat app 'shop' di dalam folder app
+
+        (francis) λ mkdir app\shop
+
+        (francis) λ django-admin startapp shop app\shop
+
+        (francis) λ ls
+        app/  config/  manage.py*  README.md
+
+        (francis) λ tree app/shop /f
+        Folder PATH listing
+        Volume serial number is C0000100 1A60:D2FA
+        C:\USERS\ING\DESKTOP\2024-DEVSPACE\2024-DJ5ECOM-FRANCIS\SRC\APP\SHOP
+        │   admin.py
+        │   apps.py
+        │   models.py
+        │   tests.py
+        │   views.py
+        │   __init__.py
+        │
+        └───migrations
+                __init__.py
+
+        modified:   README.md
+        new file:   app/shop/__init__.py
+        new file:   app/shop/admin.py
+        new file:   app/shop/apps.py
+        new file:   app/shop/migrations/__init__.py
+        new file:   app/shop/models.py
+        new file:   app/shop/tests.py
+        new file:   app/shop/views.py
