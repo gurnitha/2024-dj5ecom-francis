@@ -122,3 +122,10 @@ Github: https://github.com/gurnitha/2024-dj5ecom-francis
         modified:   README.md
         modified:   app/shop/views.py
         new file:   templates/shop/index.html
+
+
+#### 4. Menggunakan template inheritance pada home page
+
+        modified:   README.md
+        new file:   templates/base.html
+        modified:   templates/shop/index.html
