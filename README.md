@@ -117,7 +117,7 @@ Github: https://github.com/gurnitha/2024-dj5ecom-francis
         modified:   config/settings.py
 
 
-#### 3. Hallo World menggunakan ulrs, views dan templates
+#### 3. Membuat home page menampilkan Hallo World menggunakan ulrs, views dan templates
 
         modified:   README.md
         modified:   app/shop/views.py
@@ -128,4 +128,13 @@ Github: https://github.com/gurnitha/2024-dj5ecom-francis
 
         modified:   README.md
         new file:   templates/base.html
+        modified:   templates/shop/index.html
+
+
+#### 5. Mengisi html template pada home page
+
+        modified:   README.md
+        modified:   templates/base.html
+        new file:   templates/partials/footer.html
+        new file:   templates/partials/header.html
         modified:   templates/shop/index.html
