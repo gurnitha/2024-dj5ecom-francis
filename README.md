@@ -153,3 +153,7 @@ Github: https://github.com/gurnitha/2024-dj5ecom-francis
         ...
         modified:   templates/partials/header.html
         modified:   templates/shop/index.html
+
+
+
+## 5. DATABASE
