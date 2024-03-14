@@ -13,3 +13,13 @@ class Slider(models.Model):
 	image 		= models.ImageField(upload_to="sliders/%Y/%m/%d/", blank=False, null=False)
 	created_at 	= models.DateTimeField(auto_now_add=True)
 	updated_at 	= models.DateTimeField(auto_now=True)
+
+
+class Collection(models.Model):
+	title 		= models.CharField(max_length=60, blank=False, null=False)
+	description = models.CharField(max_length=60, blank=False, null=False)
+	button_text = models.CharField(max_length=60, blank=False, null=False)
+	button_link = models.CharField(max_length=255, blank=False, null=False)
+	image 		= models.ImageField(upload_to="collections/%Y/%m/%d/", blank=False, null=False)
+	created_at 	= models.DateTimeField(auto_now_add=True)
+	updated_at 	= models.DateTimeField(auto_now=True)

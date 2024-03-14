@@ -343,3 +343,25 @@ Github: https://github.com/gurnitha/2024-dj5ecom-francis
         modified:   README.md
         new file:   templates/partials/slider.html
         modified:   templates/shop/index.html
+
+
+#### 5. Membua Collection model dan jalankan migrasi
+
+        modified:   README.md
+        new file:   app/shop/migrations/0002_collection.py
+        modified:   app/shop/models.py
+
+        (francis) λ python manage.py sqlmigrate shop 0002
+        --
+        -- Create model Collection
+        --
+        CREATE TABLE `shop_collection` (
+                `id` bigint AUTO_INCREMENT NOT NULL PRIMARY KEY, 
+                `title` varchar(60) NOT NULL, 
+                `description` varchar(60) NOT NULL, 
+                `button_text` varchar(60) NOT NULL, 
+                `button_link` varchar(255) NOT NULL, 
+                `image` varchar(100) NOT NULL, 
+                `created_at` datetime(6) NOT NULL, 
+                `updated_at` datetime(6) NOT NULL
+        );
