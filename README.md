@@ -254,3 +254,18 @@ Github: https://github.com/gurnitha/2024-dj5ecom-francis
         | django_session                |
         +-------------------------------+
         10 rows in set (0.00 sec)
+
+
+#### 2. Membuat superuser
+
+        C:\Users\ING\Desktop\2024-DEVSPACE\2024-dj5ecom-francis\src(main -> origin)
+        (francis) λ REM: Membuat superuser
+
+        (francis) λ python manage.py createsuperuser
+        Username (leave blank to use 'ing'): superuser
+        Email address: superuser@mail.com
+        Password:
+        Password (again):
+        The password is too similar to the email address.
+        Bypass password validation and create user anyway? [y/N]: y
+        Superuser created successfully.
