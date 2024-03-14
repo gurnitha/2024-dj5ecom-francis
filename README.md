@@ -336,3 +336,10 @@ Github: https://github.com/gurnitha/2024-dj5ecom-francis
 
         modified:   app/shop/views.py
         modified:   templates/shop/index.html
+
+
+#### 4. Include slider pada partials
+
+        modified:   README.md
+        new file:   templates/partials/slider.html
+        modified:   templates/shop/index.html
