@@ -485,3 +485,10 @@ Github: https://github.com/gurnitha/2024-dj5ecom-francis
 
         1. Menggunakan teknik yang sama spt pada poin 10.
         2. Hasinya sama, sempurna :)
+        di bawah ini.
+
+
+#### 14. Load dan display new special offer products part 1 - menghapus sebagian file
+
+        modified:   README.md
+        modified:   templates/shop/index.html
