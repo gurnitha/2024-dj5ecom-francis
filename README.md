@@ -463,3 +463,9 @@ Github: https://github.com/gurnitha/2024-dj5ecom-francis
         Kita akan coba teknik yang sama pada featured dan special offer products
         di bawah ini.
 
+
+#### 11. Load dan display new featured products part 1 - menghapus sebagian file
+
+        modified:   README.md
+        modified:   templates/shop/index.html
+
