@@ -417,3 +417,10 @@ Github: https://github.com/gurnitha/2024-dj5ecom-francis
         modified:   jstore_ecommerce.db
         modified:   shop/views/shop_view.py
         modified:   templates/shop/index.html
+
+
+#### 8. Memindahkan code new arrival product ke file templates/partials/product.html
+
+        modified:   README.md
+        new file:   templates/partials/product.html
+        modified:   templates/shop/index.html
