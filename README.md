@@ -365,3 +365,47 @@ Github: https://github.com/gurnitha/2024-dj5ecom-francis
                 `created_at` datetime(6) NOT NULL, 
                 `updated_at` datetime(6) NOT NULL
         );
+
+
+#### 6. Merubah struktur proyek: struktur proyek didasarkan pada francis punya
+
+        modified:   .gitignore
+        modified:   README.md
+        modified:   app/shop/admin.py
+        modified:   app/shop/apps.py
+        modified:   app/shop/migrations/0001_initial.py
+        modified:   app/shop/migrations/0002_collection.py
+        deleted:    app/shop/models.py
+        modified:   app/shop/urls.py
+        deleted:    app/shop/views.py
+        modified:   config/settings.py
+        modified:   config/urls.py
+        new file:   databases/categories.json
+        new file:   databases/collections.json
+        new file:   databases/products.json
+        new file:   databases/sliders.json
+        new file:   jstore_ecommerce.db
+        new file:   loader.py
+        deleted:    media/sliders/2024/03/14/banner1.png
+        deleted:    media/sliders/2024/03/14/banner3.png
+        deleted:    media/sliders/2024/03/14/banner7.png
+        new file:   shop/__init__.py
+        new file:   shop/admin.py
+        new file:   shop/apps.py
+        new file:   shop/migrations/0001_initial.py
+        new file:   shop/migrations/__init__.py
+        new file:   shop/models/Category.py
+        new file:   shop/models/Collection.py
+        new file:   shop/models/Image.py
+        new file:   shop/models/Product.py
+        new file:   shop/models/Slider.py
+        new file:   shop/models/__init__.py
+        new file:   shop/tests.py
+        new file:   shop/urls.py
+        new file:   shop/views/shop_view.py
+        modified:   templates/shop/index.html
+
+        NOTE:
+
+        1. Db baru.
+        2. Inserted Sliders, Collecitons, Categories, Images, dan Products pada db
