@@ -41,12 +41,13 @@
             </div>
             <div  class="row">
                 <div  class="col-12">
+
+                    <!-- product_tabs -->
                     <div  class="tab-style1">
                         <ul  role="tablist" class="nav nav-tabs justify-content-center">
                             <li  class="nav-item"><a 
                                 id="arrival-tab" data-bs-toggle="tab" href="#arrival" role="tab"
-                                aria-controls="arrival" aria-selected="true" class="nav-link active">New
-                                Arrival</a>
+                                aria-controls="arrival" aria-selected="true" class="nav-link active">New Arrival</a>
                             </li>
                             <li  class="nav-item"><a 
                                 id="sellers-tab" data-bs-toggle="tab" href="#sellers" role="tab"
@@ -63,17 +64,22 @@
                             </li>
                         </ul>
                     </div>
+                    <!-- product_tabs end -->
+
+                    <!-- product_tabs_content -->
                     <div  class="tab-content">
+
+                        <!-- new_arrival -->
                         <div  id="arrival" role="tabpanel" aria-labelledby="arrival-tab"
                             class="tab-pane fade show active">
                             <div  class="row shop_container">
+                                {% for product in new_arrivals %}
                                 <div  class="col-lg-3 col-md-4 col-6">
                                     <div  class="product">
                                         <div  class="product_img">
-                                            <a
-                                                href="shop-product-detail.html"><img
-                                                alt="product_img1"
-                                                src="/assets/files/970670668041335927385290724653240714148366921684565574162.webp"></a>
+                                            <a href="shop-product-detail.html">
+                                                <img alt="{{ product.name }}"
+                                                src="{{ product.images.first.image.url }}"></a>
                                             <div  class="product_action_box">
                                                 <ul  class="list_none pr_action_btn">
                                                     <li  class="add-to-cart"><a
@@ -95,13 +101,14 @@
                                         <div  class="product_info">
                                             <h6  class="product_title"><a
                                                 ng-reflect-router-link="/,product,bikini-unicolore-cte"
-                                                href="/product/bikini-unicolore-ctel-shop"> Bikini unicolore
-                                                côtelé</a>
+                                                href="/product/bikini-unicolore-ctel-shop">{{ product.name }}</a>
                                             </h6>
                                             <div  class="product_price">
                                                 <span
-                                                    class="price">$28.24</span><del
-                                                    >$241.5</del>
+                                                    class="price">{{ product.regular_price }}</span>
+                                                    <del>
+                                                        {{ product.solde_price }}
+                                                    </del>
                                                 <div  class="on_sale"><span
                                                     >35% Off</span></div>
                                             </div>
@@ -114,9 +121,8 @@
                                                     class="rating_num">(21)</span>
                                             </div>
                                             <div  class="pr_desc">
-                                                <p >Lorem ipsum dolor sit amet,
-                                                    consectetur adipiscing elit. Phasellus blandit massa enim.
-                                                    Nullam id varius nunc id varius nunc.
+                                                <p>
+                                                    {{ product.description | safe }}
                                                 </p>
                                             </div>
                                             <div  class="pr_switch_wrap">
@@ -130,446 +136,12 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div  class="col-lg-3 col-md-4 col-6">
-                                    <div  class="product">
-                                        <div  class="product_img">
-                                            <a
-                                                href="shop-product-detail.html"><img
-                                                alt="product_img1"
-                                                src="/assets/files/culottes/culotte_3/6138170893214881132536005127536132168491807951684087224669.webp"></a>
-                                            <div  class="product_action_box">
-                                                <ul  class="list_none pr_action_btn">
-                                                    <li  class="add-to-cart"><a
-                                                        href="#"><i
-                                                        class="icon-basket-loaded"></i> Add To Cart </a>
-                                                    </li>
-                                                    <li ><a 
-                                                        href="shop-compare.html" ><i
-                                                        class="icon-shuffle"></i></a></li>
-                                                    <li ><a 
-                                                        href="shop-quick-view.html" ><i
-                                                        class="icon-magnifier-add"></i></a></li>
-                                                    <li ><a 
-                                                        href="#"><i 
-                                                        class="icon-heart"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div  class="product_info">
-                                            <h6  class="product_title"><a
-                                                ng-reflect-router-link="/,product,culotte-blocs-de-cou"
-                                                href="/product/culotte-blocs-de-couleurs-en-dentelle-jstore">
-                                                Culotte à blocs de couleurs en dentelle</a>
-                                            </h6>
-                                            <div  class="product_price">
-                                                <span
-                                                    class="price">$54.95</span><del
-                                                    >$202.57</del>
-                                                <div  class="on_sale"><span
-                                                    >35% Off</span></div>
-                                            </div>
-                                            <div  class="rating_wrap">
-                                                <div  class="rating">
-                                                    <div  class="product_rate"
-                                                        style="width: 80%;"></div>
-                                                </div>
-                                                <span 
-                                                    class="rating_num">(21)</span>
-                                            </div>
-                                            <div  class="pr_desc">
-                                                <p >Lorem ipsum dolor sit amet,
-                                                    consectetur adipiscing elit. Phasellus blandit massa enim.
-                                                    Nullam id varius nunc id varius nunc.
-                                                </p>
-                                            </div>
-                                            <div  class="pr_switch_wrap">
-                                                <div  class="product_color_switch"><span
-                                                    data-color="#87554B"
-                                                    class="active"></span><span 
-                                                    data-color="#333333"></span><span
-                                                    data-color="#DA323F"></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div  class="col-lg-3 col-md-4 col-6">
-                                    <div  class="product">
-                                        <div  class="product_img">
-                                            <a
-                                                href="shop-product-detail.html"><img
-                                                alt="product_img1"
-                                                src="/assets/files/culottes/culotte_9/116945623386141314594418897879593148825527931684087225230.webp"></a>
-                                            <div  class="product_action_box">
-                                                <ul  class="list_none pr_action_btn">
-                                                    <li  class="add-to-cart"><a
-                                                        href="#"><i
-                                                        class="icon-basket-loaded"></i> Add To Cart </a>
-                                                    </li>
-                                                    <li ><a 
-                                                        href="shop-compare.html" ><i
-                                                        class="icon-shuffle"></i></a></li>
-                                                    <li ><a 
-                                                        href="shop-quick-view.html" ><i
-                                                        class="icon-magnifier-add"></i></a></li>
-                                                    <li ><a 
-                                                        href="#"><i 
-                                                        class="icon-heart"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div  class="product_info">
-                                            <h6  class="product_title"><a
-                                                ng-reflect-router-link="/,product,culotte-unicolore-sa"
-                                                href="/product/culotte-unicolore-sans-couture-category"> Culotte
-                                                unicolore (sans couture)</a>
-                                            </h6>
-                                            <div  class="product_price">
-                                                <span
-                                                    class="price">$44.54</span><del
-                                                    >$201.32</del>
-                                                <div  class="on_sale"><span
-                                                    >35% Off</span></div>
-                                            </div>
-                                            <div  class="rating_wrap">
-                                                <div  class="rating">
-                                                    <div  class="product_rate"
-                                                        style="width: 80%;"></div>
-                                                </div>
-                                                <span 
-                                                    class="rating_num">(21)</span>
-                                            </div>
-                                            <div  class="pr_desc">
-                                                <p >Lorem ipsum dolor sit amet,
-                                                    consectetur adipiscing elit. Phasellus blandit massa enim.
-                                                    Nullam id varius nunc id varius nunc.
-                                                </p>
-                                            </div>
-                                            <div  class="pr_switch_wrap">
-                                                <div  class="product_color_switch"><span
-                                                    data-color="#87554B"
-                                                    class="active"></span><span 
-                                                    data-color="#333333"></span><span
-                                                    data-color="#DA323F"></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div  class="col-lg-3 col-md-4 col-6">
-                                    <div  class="product">
-                                        <div  class="product_img">
-                                            <a
-                                                href="shop-product-detail.html"><img
-                                                alt="product_img1"
-                                                src="/assets/files/culottes/culotte_7/825380258783085919054835307976332473139779511684087224936.webp"></a>
-                                            <div  class="product_action_box">
-                                                <ul  class="list_none pr_action_btn">
-                                                    <li  class="add-to-cart"><a
-                                                        href="#"><i
-                                                        class="icon-basket-loaded"></i> Add To Cart </a>
-                                                    </li>
-                                                    <li ><a 
-                                                        href="shop-compare.html" ><i
-                                                        class="icon-shuffle"></i></a></li>
-                                                    <li ><a 
-                                                        href="shop-quick-view.html" ><i
-                                                        class="icon-magnifier-add"></i></a></li>
-                                                    <li ><a 
-                                                        href="#"><i 
-                                                        class="icon-heart"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div  class="product_info">
-                                            <h6  class="product_title"><a
-                                                ng-reflect-router-link="/,product,culotte-en-dentelle-"
-                                                href="/product/culotte-en-dentelle-mudey"> Culotte en
-                                                dentelle</a>
-                                            </h6>
-                                            <div  class="product_price">
-                                                <span
-                                                    class="price">$17.17</span><del
-                                                    >$277.59</del>
-                                                <div  class="on_sale"><span
-                                                    >35% Off</span></div>
-                                            </div>
-                                            <div  class="rating_wrap">
-                                                <div  class="rating">
-                                                    <div  class="product_rate"
-                                                        style="width: 80%;"></div>
-                                                </div>
-                                                <span 
-                                                    class="rating_num">(21)</span>
-                                            </div>
-                                            <div  class="pr_desc">
-                                                <p >Lorem ipsum dolor sit amet,
-                                                    consectetur adipiscing elit. Phasellus blandit massa enim.
-                                                    Nullam id varius nunc id varius nunc.
-                                                </p>
-                                            </div>
-                                            <div  class="pr_switch_wrap">
-                                                <div  class="product_color_switch"><span
-                                                    data-color="#87554B"
-                                                    class="active"></span><span 
-                                                    data-color="#333333"></span><span
-                                                    data-color="#DA323F"></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div  class="col-lg-3 col-md-4 col-6">
-                                    <div  class="product">
-                                        <div  class="product_img">
-                                            <a
-                                                href="shop-product-detail.html"><img
-                                                alt="product_img1"
-                                                src="/assets/files/culottes/culotte_5/36851533762117856286455670026456984987161761684087224828.webp"></a>
-                                            <div  class="product_action_box">
-                                                <ul  class="list_none pr_action_btn">
-                                                    <li  class="add-to-cart"><a
-                                                        href="#"><i
-                                                        class="icon-basket-loaded"></i> Add To Cart </a>
-                                                    </li>
-                                                    <li ><a 
-                                                        href="shop-compare.html" ><i
-                                                        class="icon-shuffle"></i></a></li>
-                                                    <li ><a 
-                                                        href="shop-quick-view.html" ><i
-                                                        class="icon-magnifier-add"></i></a></li>
-                                                    <li ><a 
-                                                        href="#"><i 
-                                                        class="icon-heart"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div  class="product_info">
-                                            <h6  class="product_title"><a
-                                                ng-reflect-router-link="/,product,culotte-en-dentelle-"
-                                                href="/product/culotte-en-dentelle-espero"> Culotte en
-                                                dentelle</a>
-                                            </h6>
-                                            <div  class="product_price">
-                                                <span
-                                                    class="price">$23.91</span><del
-                                                    >$221.82</del>
-                                                <div  class="on_sale"><span
-                                                    >35% Off</span></div>
-                                            </div>
-                                            <div  class="rating_wrap">
-                                                <div  class="rating">
-                                                    <div  class="product_rate"
-                                                        style="width: 80%;"></div>
-                                                </div>
-                                                <span 
-                                                    class="rating_num">(21)</span>
-                                            </div>
-                                            <div  class="pr_desc">
-                                                <p >Lorem ipsum dolor sit amet,
-                                                    consectetur adipiscing elit. Phasellus blandit massa enim.
-                                                    Nullam id varius nunc id varius nunc.
-                                                </p>
-                                            </div>
-                                            <div  class="pr_switch_wrap">
-                                                <div  class="product_color_switch"><span
-                                                    data-color="#87554B"
-                                                    class="active"></span><span 
-                                                    data-color="#333333"></span><span
-                                                    data-color="#DA323F"></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div  class="col-lg-3 col-md-4 col-6">
-                                    <div  class="product">
-                                        <div  class="product_img">
-                                            <a
-                                                href="shop-product-detail.html"><img
-                                                alt="product_img1"
-                                                src="/assets/files/culottes/culotte_4/87087411019387380483560199609827534551691041684087224752.webp"></a>
-                                            <div  class="product_action_box">
-                                                <ul  class="list_none pr_action_btn">
-                                                    <li  class="add-to-cart"><a
-                                                        href="#"><i
-                                                        class="icon-basket-loaded"></i> Add To Cart </a>
-                                                    </li>
-                                                    <li ><a 
-                                                        href="shop-compare.html" ><i
-                                                        class="icon-shuffle"></i></a></li>
-                                                    <li ><a 
-                                                        href="shop-quick-view.html" ><i
-                                                        class="icon-magnifier-add"></i></a></li>
-                                                    <li ><a 
-                                                        href="#"><i 
-                                                        class="icon-heart"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div  class="product_info">
-                                            <h6  class="product_title"><a
-                                                ng-reflect-router-link="/,product,culotte-unicolore-fe"
-                                                href="/product/culotte-unicolore-femme-sans-couture-akpoli">
-                                                Culotte unicolore femme (sans couture)</a>
-                                            </h6>
-                                            <div  class="product_price">
-                                                <span
-                                                    class="price">$56.07</span><del
-                                                    >$223.66</del>
-                                                <div  class="on_sale"><span
-                                                    >35% Off</span></div>
-                                            </div>
-                                            <div  class="rating_wrap">
-                                                <div  class="rating">
-                                                    <div  class="product_rate"
-                                                        style="width: 80%;"></div>
-                                                </div>
-                                                <span 
-                                                    class="rating_num">(21)</span>
-                                            </div>
-                                            <div  class="pr_desc">
-                                                <p >Lorem ipsum dolor sit amet,
-                                                    consectetur adipiscing elit. Phasellus blandit massa enim.
-                                                    Nullam id varius nunc id varius nunc.
-                                                </p>
-                                            </div>
-                                            <div  class="pr_switch_wrap">
-                                                <div  class="product_color_switch"><span
-                                                    data-color="#87554B"
-                                                    class="active"></span><span 
-                                                    data-color="#333333"></span><span
-                                                    data-color="#DA323F"></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div  class="col-lg-3 col-md-4 col-6">
-                                    <div  class="product">
-                                        <div  class="product_img">
-                                            <a
-                                                href="shop-product-detail.html"><img
-                                                alt="product_img1"
-                                                src="/assets/files/culottes/culotte_2/64690629656996101166169787112869964617448491684087224479.webp"></a>
-                                            <div  class="product_action_box">
-                                                <ul  class="list_none pr_action_btn">
-                                                    <li  class="add-to-cart"><a
-                                                        href="#"><i
-                                                        class="icon-basket-loaded"></i> Add To Cart </a>
-                                                    </li>
-                                                    <li ><a 
-                                                        href="shop-compare.html" ><i
-                                                        class="icon-shuffle"></i></a></li>
-                                                    <li ><a 
-                                                        href="shop-quick-view.html" ><i
-                                                        class="icon-magnifier-add"></i></a></li>
-                                                    <li ><a 
-                                                        href="#"><i 
-                                                        class="icon-heart"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div  class="product_info">
-                                            <h6  class="product_title"><a
-                                                ng-reflect-router-link="/,product,tanga-unicolore"
-                                                href="/product/tanga-unicolore"> Tanga unicolore</a></h6>
-                                            <div  class="product_price">
-                                                <span
-                                                    class="price">$38.84</span><del
-                                                    >$292.94</del>
-                                                <div  class="on_sale"><span
-                                                    >35% Off</span></div>
-                                            </div>
-                                            <div  class="rating_wrap">
-                                                <div  class="rating">
-                                                    <div  class="product_rate"
-                                                        style="width: 80%;"></div>
-                                                </div>
-                                                <span 
-                                                    class="rating_num">(21)</span>
-                                            </div>
-                                            <div  class="pr_desc">
-                                                <p >Lorem ipsum dolor sit amet,
-                                                    consectetur adipiscing elit. Phasellus blandit massa enim.
-                                                    Nullam id varius nunc id varius nunc.
-                                                </p>
-                                            </div>
-                                            <div  class="pr_switch_wrap">
-                                                <div  class="product_color_switch"><span
-                                                    data-color="#87554B"
-                                                    class="active"></span><span 
-                                                    data-color="#333333"></span><span
-                                                    data-color="#DA323F"></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div  class="col-lg-3 col-md-4 col-6">
-                                    <div  class="product">
-                                        <div  class="product_img">
-                                            <a
-                                                href="shop-product-detail.html"><img
-                                                alt="product_img1"
-                                                src="/assets/files/culottes/culotte_8/10518988473111520886581236853833613928085898971684087225041.webp"></a>
-                                            <div  class="product_action_box">
-                                                <ul  class="list_none pr_action_btn">
-                                                    <li  class="add-to-cart"><a
-                                                        href="#"><i
-                                                        class="icon-basket-loaded"></i> Add To Cart </a>
-                                                    </li>
-                                                    <li ><a 
-                                                        href="shop-compare.html" ><i
-                                                        class="icon-shuffle"></i></a></li>
-                                                    <li ><a 
-                                                        href="shop-quick-view.html" ><i
-                                                        class="icon-magnifier-add"></i></a></li>
-                                                    <li ><a 
-                                                        href="#"><i 
-                                                        class="icon-heart"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div  class="product_info">
-                                            <h6  class="product_title"><a
-                                                ng-reflect-router-link="/,product,culotte-en-dentelle"
-                                                href="/product/culotte-en-dentelle"> Culotte en dentelle</a>
-                                            </h6>
-                                            <div  class="product_price">
-                                                <span
-                                                    class="price">$58.43</span><del
-                                                    >$291.58</del>
-                                                <div  class="on_sale"><span
-                                                    >35% Off</span></div>
-                                            </div>
-                                            <div  class="rating_wrap">
-                                                <div  class="rating">
-                                                    <div  class="product_rate"
-                                                        style="width: 80%;"></div>
-                                                </div>
-                                                <span 
-                                                    class="rating_num">(21)</span>
-                                            </div>
-                                            <div  class="pr_desc">
-                                                <p >Lorem ipsum dolor sit amet,
-                                                    consectetur adipiscing elit. Phasellus blandit massa enim.
-                                                    Nullam id varius nunc id varius nunc.
-                                                </p>
-                                            </div>
-                                            <div  class="pr_switch_wrap">
-                                                <div  class="product_color_switch"><span
-                                                    data-color="#87554B"
-                                                    class="active"></span><span 
-                                                    data-color="#333333"></span><span
-                                                    data-color="#DA323F"></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                {% endfor %}
                             </div>
                         </div>
+                        <!-- new_arrival end -->
+
+                        <!-- best_sellers -->
                         <div  id="sellers" role="tabpanel" aria-labelledby="sellers-tab"
                             class="tab-pane fade">
                             <div  class="row shop_container">
@@ -1071,6 +643,9 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- best_sellers end -->
+
+                        <!-- featured -->
                         <div  id="featured" role="tabpanel"
                             aria-labelledby="featured-tab" class="tab-pane fade">
                             <div  class="row shop_container">
@@ -1584,6 +1159,9 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- featured end -->
+
+                        <!-- special_offer -->
                         <div  id="special" role="tabpanel" aria-labelledby="special-tab"
                             class="tab-pane fade">
                             <div  class="row shop_container">
@@ -2085,7 +1663,9 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- special_offer end -->
                     </div>
+                     <!-- product_tabs_content end -->
                 </div>
             </div>
         </div>

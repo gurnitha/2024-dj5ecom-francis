@@ -409,3 +409,11 @@ Github: https://github.com/gurnitha/2024-dj5ecom-francis
 
         1. Db baru.
         2. Inserted Sliders, Collecitons, Categories, Images, dan Products pada db
+
+
+#### 7. Load dan display new arrival products
+
+        modified:   README.md
+        modified:   jstore_ecommerce.db
+        modified:   shop/views/shop_view.py
+        modified:   templates/shop/index.html
