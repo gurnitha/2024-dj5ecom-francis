@@ -469,3 +469,9 @@ Github: https://github.com/gurnitha/2024-dj5ecom-francis
         modified:   README.md
         modified:   templates/shop/index.html
 
+
+#### 12. Load dan display new featured products part 2 - gunakan forloop untuk menampilkan data
+
+        modified:   README.md
+        modified:   templates/shop/index.html
+

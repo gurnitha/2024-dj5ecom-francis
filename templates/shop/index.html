@@ -96,14 +96,14 @@
                         <!-- featured -->
                         <div  id="featured" role="tabpanel" aria-labelledby="featured-tab" class="tab-pane fade">
                             <div  class="row shop_container">
+                                {% for product in featured %}
                                 <div  class="col-lg-3 col-md-4 col-6">
                                     <div  class="product">
                                         <div  class="product_img">
-                                            <a
-                                                ng-reflect-router-link="/,product,culotte-en-dentelle-"
-                                                href="/product/culotte-en-dentelle-losange-tulle"><img
-                                                alt="product_img1"
-                                                src="/assets/files/culottes/culotte_11/822238303084799851607058697164904282250918561684087225541.webp"></a>
+                                            <a ng-reflect-router-link="/,product,culotte-en-dentelle-"
+                                                href="/product/culotte-en-dentelle-losange-tulle">
+                                                <img alt="{{ product.name }}"
+                                                src="{{ product.images.first.image.url }}"></a>
                                             <div  class="product_action_box">
                                                 <ul  class="list_none pr_action_btn">
                                                     <li  class="add-to-cart"><a
@@ -125,13 +125,14 @@
                                         <div  class="product_info">
                                             <h6  class="product_title"><a
                                                 ng-reflect-router-link="/,product,culotte-en-dentelle-"
-                                                href="/product/culotte-en-dentelle-losange-tulle"> Culotte en
-                                                dentelle losange à tulle</a>
+                                                href="/product/culotte-en-dentelle-losange-tulle">{{ product.name }}</a>
                                             </h6>
                                             <div  class="product_price">
                                                 <span
-                                                    class="price">$17.92</span><del
-                                                    >$252.36</del>
+                                                    class="price">{{ product.regular_price }}</span>
+                                                    <del>
+                                                        {{ product.solde_price }}
+                                                    </del>
                                                 <div  class="on_sale"><span
                                                     >35% Off</span></div>
                                             </div>
@@ -144,9 +145,8 @@
                                                     class="rating_num">(21)</span>
                                             </div>
                                             <div  class="pr_desc">
-                                                <p >Lorem ipsum dolor sit amet,
-                                                    consectetur adipiscing elit. Phasellus blandit massa enim.
-                                                    Nullam id varius nunc id varius nunc.
+                                                <p>
+                                                    {{ product.description | safe }}
                                                 </p>
                                             </div>
                                             <div  class="pr_switch_wrap">
@@ -160,6 +160,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                {% endfor %}
                             </div>
                         </div>
                         <!-- featured end -->
