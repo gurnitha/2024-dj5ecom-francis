@@ -498,3 +498,15 @@ Github: https://github.com/gurnitha/2024-dj5ecom-francis
 
         modified:   README.md
         modified:   templates/shop/index.html
+
+
+#### 16. Load dan display special offer products part 3 - menggunakan include partials/product.html
+
+        modified:   README.md
+        modified:   templates/shop/index.html
+
+        NOTE:
+
+        1. Menggunakan teknik yang sama spt pada poin 10.
+        2. Hasinya sama, sempurna :)
+        di bawah ini.
