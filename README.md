@@ -431,3 +431,35 @@ Github: https://github.com/gurnitha/2024-dj5ecom-francis
         modified:   README.md
         modified:   jstore_ecommerce.db
         modified:   templates/shop/index.html
+
+
+#### 10. Memindahkan code new arrival product ke file templates/partials/product.html
+
+        modified:   README.md
+        modified:   templates/shop/index.html
+
+        NOTE:
+
+        1. File products best sellers tidak ada yang dipindahkan ke file partials/product.html.
+        2. Semua code yang ada di dalam: <div  class="col-lg-3 col-md-4 col-6"> dan </div>
+           diganti dengan {% include "partials/product.html" with product=product %}
+           seperti terlihat di bawah ini:
+
+                {% for product in best_sellers %}
+                <div  class="col-lg-3 col-md-4 col-6">
+                {% include "partials/product.html" with product=product %}
+                </div>
+                {% endfor %}
+        3. Hasilnya:
+           Semua objects dari best sellers didisplay dengan sempurna.
+
+        MENGAPA BISA DEMIKIAN?
+
+        Yang berbeda hanya new_arrivals di dalam {% for product in new_arrivals %}
+        dan best_sellers di dalam {% for product in best_sellers %}.
+
+        Selebihnya sama. Ini hanya teknik menampilkan data secara efisien.
+
+        Kita akan coba teknik yang sama pada featured dan special offer products
+        di bawah ini.
+
