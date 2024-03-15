@@ -424,3 +424,10 @@ Github: https://github.com/gurnitha/2024-dj5ecom-francis
         modified:   README.md
         new file:   templates/partials/product.html
         modified:   templates/shop/index.html
+
+
+#### 9. Load dan display new best sellers products
+
+        modified:   README.md
+        modified:   jstore_ecommerce.db
+        modified:   templates/shop/index.html
