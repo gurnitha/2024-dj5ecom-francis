@@ -109,13 +109,14 @@
                         <div  id="special" role="tabpanel" aria-labelledby="special-tab"
                             class="tab-pane fade">
                             <div  class="row shop_container">
+                                {% for product in special_offers %}
                                 <div  class="col-lg-3 col-md-4 col-6">
                                     <div  class="product">
                                         <div  class="product_img">
                                             <a
-                                                href="shop-product-detail.html"><img
-                                                alt="product_img1"
-                                                src="/assets/files/jupes/jupe_9/3173273343910765018722650935896721963486558051684087227442.webp"></a>
+                                                href="shop-product-detail.html">
+                                                <img alt="{{ product.name }}"
+                                                src="{{ product.images.first.image.url }}"></a>
                                             <div  class="product_action_box">
                                                 <ul  class="list_none pr_action_btn">
                                                     <li  class="add-to-cart"><a
@@ -136,13 +137,13 @@
                                         </div>
                                         <div  class="product_info">
                                             <h6  class="product_title"><a
-                                                href="shop-product-detail.html">
-                                                Jupe crayon taille haute en dentelle</a>
+                                                href="shop-product-detail.html">{{ product.name }}</a>
                                             </h6>
                                             <div  class="product_price">
-                                                <span
-                                                    class="price">$57.49</span><del
-                                                    >$209.37</del>
+                                                <span class="price">{{ product.regular_price }}</span>
+                                                    <del>
+                                                        {{ product.solde_price }}
+                                                    </del>
                                                 <div  class="on_sale"><span
                                                     >35% Off</span></div>
                                             </div>
@@ -155,9 +156,8 @@
                                                     class="rating_num">(21)</span>
                                             </div>
                                             <div  class="pr_desc">
-                                                <p >Lorem ipsum dolor sit amet,
-                                                    consectetur adipiscing elit. Phasellus blandit massa enim.
-                                                    Nullam id varius nunc id varius nunc.
+                                                <p>
+                                                    {{ product.description | safe }}
                                                 </p>
                                             </div>
                                             <div  class="pr_switch_wrap">
@@ -171,6 +171,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                {% endfor %}
                             </div>
                         </div>
                         <!-- special_offer end -->

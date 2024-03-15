@@ -464,19 +464,19 @@ Github: https://github.com/gurnitha/2024-dj5ecom-francis
         di bawah ini.
 
 
-#### 11. Load dan display new featured products part 1 - menghapus sebagian file
+#### 11. Load dan display featured products part 1 - menghapus sebagian file
 
         modified:   README.md
         modified:   templates/shop/index.html
 
 
-#### 12. Load dan display new featured products part 2 - gunakan forloop untuk menampilkan data
+#### 12. Load dan display featured products part 2 - gunakan forloop untuk menampilkan data
 
         modified:   README.md
         modified:   templates/shop/index.html
 
 
-#### 13. Load dan display new featured products part 3 - menggunakan include partials/product.html
+#### 13. Load dan display featured products part 3 - menggunakan include partials/product.html
 
         modified:   README.md
         modified:   templates/shop/index.html
@@ -488,7 +488,13 @@ Github: https://github.com/gurnitha/2024-dj5ecom-francis
         di bawah ini.
 
 
-#### 14. Load dan display new special offer products part 1 - menghapus sebagian file
+#### 14. Load dan display special offer products part 1 - menghapus sebagian file
+
+        modified:   README.md
+        modified:   templates/shop/index.html
+
+
+#### 15. Load dan display special offer products part 2 - gunakan forloop untuk menampilkan data
 
         modified:   README.md
         modified:   templates/shop/index.html
