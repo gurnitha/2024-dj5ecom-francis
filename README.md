@@ -510,3 +510,9 @@ Github: https://github.com/gurnitha/2024-dj5ecom-francis
         1. Menggunakan teknik yang sama spt pada poin 10.
         2. Hasinya sama, sempurna :)
         di bawah ini.
+
+
+#### 17. modified: jstore_ecommerce.db
+
+        modified:   README.md
+        modified:   jstore_ecommerce.db
